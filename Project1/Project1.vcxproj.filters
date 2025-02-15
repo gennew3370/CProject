@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="4입력.C">
+    <ClCompile Include="6연산자2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

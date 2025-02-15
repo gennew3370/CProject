@@ -1,3 +1,2 @@
-﻿  4입력.C
-C:\choits\Project1\4입력.C(45,2): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-  Project1.vcxproj -> C:\choits\Project1\x64\Debug\Project1.exe
+﻿  6연산자2.c
+  Project1.vcxproj -> C:\choits\CProject\Project1\x64\Debug\Project1.exe
