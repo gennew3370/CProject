@@ -305,3 +305,91 @@ a / 16과 동일한 결과
 XOR(Exclusive OR): 배타적 논리합, 대칭 차집합
 1) a와 b를 비교했을 때 비트가 다른 지점을 1, 같으면 0으로 처리합니다.
 2) 이 연산 반ㅇ식은 암호학 의 기초로 많이 처리됩니다.
+
+# 250216
+
+## 목차
+# 1.if문
+
+# 1.if문
+# 1) if,else,else if문의 사용방
+
+if문 사용 방법
+if(조건식)
+{
+ 조건식이 만족할 때 실행할 명령문;
+}
+
+if - else 문
+if(조건식)
+{
+ 조건식이 만족할 때 실행할 명령문;
+}
+else
+{
+조건식이 만족하지 않았을 경우 실행할 명령문;
+}
+
+if - else if 문
+if(조건식)
+{
+ 조건식이 만족할 때 실행할 명령문;
+}
+else if
+{
+ 위의 조건식이 만족하지 않고, 조건식2가 만족하고 있는 경우 실행할 명령문;
+}
+
+# 2)예시문제
+```c
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main()
+{
+	int number1, number2;
+
+	printf("두 개의 정수를 입력해주세요.(단, 큰 수를 먼저 입력합니다.)>>");
+	scanf("%d %d", &number1, &number2);
+
+	if (number1 > number2)
+	{
+		printf("두 수의 곱은 %d입니다.\n", number1 * number2);
+	}
+	else
+	{
+		printf("number1이 number2보다 더 큰 값이여야 합니다.\n");
+	}
+
+	int score;
+	printf("0점부터 100점 사이의 점수를 하나 입력해주세요. >>");
+	scanf("%d", &score);
+
+	if (score < 0 || score > 100)
+	{
+		printf("잘못된 입력입니다.\n");
+	}
+
+	else if (score >= 60)
+	{
+		printf("합격\n");
+	}
+	else if (score < 60)
+	{
+		printf("불합격\n");
+	}
+
+
+	return 0;
+}
+```
+
+# 3)조건식을 2개 이상 사용하는 방법
+
+A AND B  비트연산 기호 &를 2번 작성
+ex score >= 0 && score <= 100
+점수는 0 이상 100 이하인 조건
+
+A OR B 비트연산 기호 |를 2번 작성
+score < 0 || score > 100
+점수가 0보다 작거나, 100보다 큰 조건
